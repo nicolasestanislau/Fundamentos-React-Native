@@ -19,7 +19,7 @@ export default props => {
     } else {
         return (
             < Text style={style.textGrande} >
-                outro!
+                {Platform.OS}
             </Text >
         )
 

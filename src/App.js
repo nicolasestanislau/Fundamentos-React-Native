@@ -7,9 +7,17 @@ import Aleatorio from './components/Aleatorio';
 import Titulo from './components/Titulo';
 import Button from './components/Button';
 import Contador from './components/Contador';
-import Pai from './components/indireta/Pai'; */
+import Pai from './components/indireta/Pai';
 import ContadorV2 from './components/contador/ContadorV2';
-import Diferenciar from './components/Diferenciar';
+import Diferenciar from './components/Diferenciar';  
+import ParImpar from './components/ParImpar';
+import Pai from './components/relacao/Pai';
+import Filho from './components/relacao/Filho';
+import UsuarioLogado from './components/UsuarioLogado';
+import ListaProdutos from './components/produtos/ListaProdutos'; */
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
+import DigiteSeuNome from './components/DigiteSeuNome';
+
 
 export default () => (
     <SafeAreaView style={style.App}>
@@ -27,9 +35,28 @@ export default () => (
         <Text>{ 1 + 1 }</Text>
         <Pai />
         <Primeiro/>
-        <ContadorV2 /> */}
-
+        <ContadorV2 />
         <Diferenciar />
+        <ParImpar num={4}/>
+        <Pai>
+            <Filho nome="filho 1" sobrenome="sobre nome filho 1" />
+            <Filho nome="filho 2 " sobrenome="sobrenome filho 2" />
+            <Filho nome="filho n " sobrenome="sobrenome filho n" />
+        </Pai>
+        <Pai >
+            <Filho nome="filho de outro componente pai 1" sobrenome="sobre nome filho 1" />
+            <Filho nome="filho de outro componente pai 2 " sobrenome="sobrenome filho 2" />
+            <Filho nome="filho de outro componente pai n " sobrenome="sobrenome filho n" />
+        </Pai>
+        <UsuarioLogado usuario={{nome: 'Nicolas', email: 'nicolas_estanislau@hotmail.com'}}/>
+        <UsuarioLogado usuario={{nome: 'Nicolas'}}/>
+        <UsuarioLogado usuario={{email: 'nicolas_estanislau@hotmail.com'}}/>
+        <UsuarioLogado usuario={{nome: 'Nicolas apareceu', email: 'nicolas_estanislau@hotmail.com'}}/>
+        <UsuarioLogado usuario={{nome: null, email: 'nicolas_estanislau@hotmail.com'}}/>
+        <ListaProdutos />
+        <ListaProdutosV2 />
+        <DigiteSeuNome /> */}
+        <DigiteSeuNome />
 
     </SafeAreaView>
 );
@@ -41,5 +68,5 @@ const style = StyleSheet.create({
         alignItems: 'center',
         padding: 20,
         backgroundColor: '#fff',
-    }
+    },
 })
