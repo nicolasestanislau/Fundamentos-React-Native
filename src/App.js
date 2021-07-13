@@ -17,6 +17,7 @@ import UsuarioLogado from './components/UsuarioLogado';
 import ListaProdutos from './components/produtos/ListaProdutos'; */
 import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
 import DigiteSeuNome from './components/DigiteSeuNome';
+import Quadrado from './components/layout/Quadrado';
 
 
 export default () => (
@@ -56,7 +57,11 @@ export default () => (
         <ListaProdutos />
         <ListaProdutosV2 />
         <DigiteSeuNome /> */}
-        <DigiteSeuNome />
+        <Quadrado color='#ff801a'/>
+        <Quadrado color='#50d1f6' />
+        <Quadrado color='#dd22c1' />
+        <Quadrado color='#8312ed' />
+        <Quadrado color='#36c9a7' />
 
     </SafeAreaView>
 );
