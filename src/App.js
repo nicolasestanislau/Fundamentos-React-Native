@@ -14,14 +14,16 @@ import ParImpar from './components/ParImpar';
 import Pai from './components/relacao/Pai';
 import Filho from './components/relacao/Filho';
 import UsuarioLogado from './components/UsuarioLogado';
-import ListaProdutos from './components/produtos/ListaProdutos'; */
+import ListaProdutos from './components/produtos/ListaProdutos'; 
 import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
 import DigiteSeuNome from './components/DigiteSeuNome';
-import Quadrado from './components/layout/Quadrado';
+import Quadrado from './components/layout/Quadrado'; */
+import FlexboxV1 from './components/layout/FlexboxV1';
 
 
 export default () => (
     <SafeAreaView style={style.App}>
+        <FlexboxV1 />
         {/*    <Titulo principal='Titulo' segundario='Subtitulo' />
         <Button />
         <Contador inicial={100}  passo={10} />
@@ -57,12 +59,6 @@ export default () => (
         <ListaProdutos />
         <ListaProdutosV2 />
         <DigiteSeuNome /> */}
-        <Quadrado color='#ff801a'/>
-        <Quadrado color='#50d1f6' />
-        <Quadrado color='#dd22c1' />
-        <Quadrado color='#8312ed' />
-        <Quadrado color='#36c9a7' />
-
     </SafeAreaView>
 );
 

@@ -2,10 +2,11 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
 export default props => {
+    const lado = 50;
     return(
         <View style={{
-            height: 20,
-            width: 20,
+            height: lado,
+            width: lado,
             backgroundColor: props.color || '#000',
         }} />
     )
