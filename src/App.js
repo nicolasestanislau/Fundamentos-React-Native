@@ -17,13 +17,16 @@ import UsuarioLogado from './components/UsuarioLogado';
 import ListaProdutos from './components/produtos/ListaProdutos'; 
 import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
 import DigiteSeuNome from './components/DigiteSeuNome';
-import Quadrado from './components/layout/Quadrado'; */
-import FlexboxV1 from './components/layout/FlexboxV1';
+import Quadrado from './components/layout/Quadrado'; 
+import FlexboxV1 from './components/layout/FlexboxV1'; 
+import FlexboxV2 from './components/layout/FlexboxV2'; 
+import FlexboxV3 from './components/layout/FlexboxV3'; 
+import FlexboxV4 from './components/layout/FlexboxV4'; */
+import Mega from './components/mega/Mega';
 
 
 export default () => (
     <SafeAreaView style={style.App}>
-        <FlexboxV1 />
         {/*    <Titulo principal='Titulo' segundario='Subtitulo' />
         <Button />
         <Contador inicial={100}  passo={10} />
@@ -58,7 +61,12 @@ export default () => (
         <UsuarioLogado usuario={{nome: null, email: 'nicolas_estanislau@hotmail.com'}}/>
         <ListaProdutos />
         <ListaProdutosV2 />
-        <DigiteSeuNome /> */}
+        <DigiteSeuNome />
+        <FlexboxV1 /> 
+        <FlexboxV2 /> 
+        <FlexboxV3 /> 
+        <FlexboxV4 /> */}
+        <Mega qtdeNumeros={6} />
     </SafeAreaView>
 );
 
